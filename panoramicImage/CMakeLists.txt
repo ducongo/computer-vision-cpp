@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( panoramicImage )
+find_package( OpenCV REQUIRED )
+add_executable( panoramicImage panoramicImage.cpp )
+target_link_libraries( panoramicImage ${OpenCV_LIBS} )

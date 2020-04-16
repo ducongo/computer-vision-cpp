@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( HarrisCornerDetector )
+find_package( OpenCV REQUIRED )
+add_executable( HarrisCornerDetector HarrisCornerDetector.cpp )
+target_link_libraries( HarrisCornerDetector ${OpenCV_LIBS} )

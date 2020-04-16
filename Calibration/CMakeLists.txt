@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( assign2_projection_shell )
+find_package( OpenCV REQUIRED )
+add_executable( assign2_projection_shell assign2_projection_shell.cpp )
+target_link_libraries( assign2_projection_shell ${OpenCV_LIBS} )
